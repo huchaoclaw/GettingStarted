@@ -15,11 +15,12 @@ source ~/.zshrc
 curl -fsSL https://fnm.vercel.app/install | bash
 
 cat <<EOF >> ~/.zshrc
+
 # FNM（Fast Node Manager）
 eval "\$(fnm env --use-on-cd --shell zsh)"
 EOF
 
-fnm install 24.14.0 --lts
+fnm install 24.14.0
 fnm use 24.14.0
 fnm ls
 fnm default 24.14.0

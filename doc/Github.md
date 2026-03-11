@@ -5,7 +5,10 @@ git config --global user.email "huchaoclaw@gmail.com"
 git config --global user.name "Huchao Claw"
 git remote -v
 git remote set-url origin git@github.com:huchaoclaw/GettingStarted.git
+
 gaa && gcmsg update && ggpush
+
+git config pull.rebase false
 ```
 
 ## Keys

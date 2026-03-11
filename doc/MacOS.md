@@ -9,6 +9,7 @@
 - [Rectangle](https://rectangleapp.com/)
 - [VSCode](https://code.visualstudio.com/)
 - [The Unarchiver](https://theunarchiver.com/)
+- [ClashX](https://en.clashx.org/)
 
 ## Setting
 
