@@ -213,3 +213,4 @@ __marimo__/
 *.assets/
 assets/
 .venv/
+secret

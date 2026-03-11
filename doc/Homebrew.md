@@ -22,3 +22,11 @@ doggo mirrors.tuna.tsinghua.edu.cn
 brew install mtr
 sudo mtr -rw formulae.brew.sh
 ```
+
+## Xcode
+
+```bash
+# https://xcodereleases.com/
+Xcode 15.2 Last For MacOS 13.5+
+
+```

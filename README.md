@@ -1,9 +1,5 @@
 # GettingStarted
 
-```bash
-curl -fsSL https://openclaw.ai/install.sh | bash
-```
-
 ## Fast Node Manager
 
 ```bash
@@ -23,6 +19,16 @@ fnm default 24.14.0
 fnm uninstall 24.14.0
 
 ```
+
+### 启动 pnpm
+
+```bash
+$ corepack enable
+$ corepack prepare pnpm@latest --activate
+$ pnpm -v
+10.32.1
+```
+
 
 ## pyenv
 

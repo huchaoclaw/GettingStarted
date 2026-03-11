@@ -20,8 +20,15 @@ defaults write com.apple.dock ResetLaunchPad -bool TRUE
 killall Dock
 ```
 
-## 
+## ZSH
 
 ```bash
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+## passwd
+
+```bash
+$ pwpolicy -clearaccountpolicies
+$ passwd
 ```
