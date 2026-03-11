@@ -19,3 +19,9 @@ defaults write com.apple.dock springboard-rows -int 9
 defaults write com.apple.dock ResetLaunchPad -bool TRUE
 killall Dock
 ```
+
+## 
+
+```bash
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```

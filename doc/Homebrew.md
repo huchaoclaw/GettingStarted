@@ -1,5 +1,9 @@
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+echo 'eval "$(/usr/local/bin/brew shellenv zsh)"' >> ~/.zshrc
+eval "$(/usr/local/bin/brew shellenv zsh)"
+source ~/.zshrc
+
 brew install wget
 
 time curl -Lo /dev/null https://formulae.brew.sh

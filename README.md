@@ -2,10 +2,6 @@
 
 ```bash
 curl -fsSL https://openclaw.ai/install.sh | bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-echo 'eval "$(/usr/local/bin/brew shellenv zsh)"' >> ~/.zshrc
-eval "$(/usr/local/bin/brew shellenv zsh)"
-source ~/.zshrc
 ```
 
 ## Fast Node Manager
@@ -40,6 +36,15 @@ echo 'eval "$(pyenv init - zsh)"' >> ~/.zshrc
 # Install Python build dependencies
 brew install openssl readline sqlite3 xz tcl-tk@8 libb2 zstd zlib pkgconfig
 
+echo 'export PATH="/usr/local/opt/tcl-tk@8/bin:$PATH"' >> ~/.zshrc
+export LDFLAGS="-L/usr/local/opt/tcl-tk@8/lib"
+export CPPFLAGS="-I/usr/local/opt/tcl-tk@8/include"
+export PKG_CONFIG_PATH="/usr/local/opt/tcl-tk@8/lib/pkgconfig"
+
+export LDFLAGS="-L/usr/local/opt/zlib/lib"
+export CPPFLAGS="-I/usr/local/opt/zlib/include"
+export PKG_CONFIG_PATH="/usr/local/opt/zlib/lib/pkgconfig"
+
 pyenv install -l
 pyenv install 3.12.13
 
@@ -61,4 +66,12 @@ pyenv deactivate
 
 pyenv uninstall <name>
 pyenv virtualenv-delete <name>
+```
+
+## Claude Code
+
+```bash
+# https://code.claude.com/docs/zh-CN/quickstart
+curl -fsSL https://claude.ai/install.sh | bash
+brew install --cask claude-code
 ```
